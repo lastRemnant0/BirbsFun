@@ -15,7 +15,6 @@ body{
 
 header{
     background-color: #1F2937;
-    border: 1px solid red;
     color: #f9faf9;
 }
 
@@ -45,5 +44,40 @@ header nav ul{
 }
 
 .main-header{
-    padding: 50px; /* just to see how it's gonna look , need to change or remove later */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    width: 85%;
+    margin: 50px auto 70px auto;
+    gap: 24px;
+}
+
+.hero-right,
+.hero-left{
+    display: flex;
+    flex-flow:column wrap;
+    gap: 5px;
+}
+
+.hero-left h3{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.hero-left p{
+    width: 50%;
+}
+
+.signup-btn{
+    padding: 5px 2px;
+    max-width: 100px;
+    background-color: #3882f6;
+    border-radius: 12px;
+    color: #f9faf9;
+}
+
+.hero-right img{
+    max-width: 350px;
+    max-height: 250px;
 }
